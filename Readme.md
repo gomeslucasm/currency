@@ -40,14 +40,14 @@ make up
 
 Este endpoint permite converter valores entre diferentes moedas. A requisição deve receber os seguintes parâmetros de query string:
 
-- from_currency: A moeda de origem.
-- to_currency: A moeda de destino.
+- from: A moeda de origem.
+- to: A moeda de destino.
 - amount: O valor a ser convertido.
 
 Exemplo de requisição:
 
 ```bash
-curl -X GET "http://localhost:8000/api/convert?from_currency=USD&to_currency=EUR&amount=100"
+curl -X GET "http://localhost:8000/api/convert?from=USD&to=EUR&amount=100"
 
 ```
 
