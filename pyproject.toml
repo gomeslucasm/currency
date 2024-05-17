@@ -4,9 +4,10 @@ version = "0.1.0"
 description = "Currency converter api"
 authors = ["Lucas Muller Gomes <lmgomes96@gmail.com>"]
 readme = "README.md"
+package-mode=false
 
 [tool.poetry.dependencies]
-python = "3.11"
+python = "^3.11"
 fastapi = "0.111.0"
 uvicorn = "^0.29.0"
 requests = "^2.31.0"
@@ -19,6 +20,7 @@ pylint = "^3.2.0"
 isort = "^5.13.2"
 requests-mock = "^1.12.1"
 pytest-mock = "^3.14.0"
+pytest-cov = "^5.0.0"
 
 [build-system]
 requires = ["poetry-core"]

@@ -11,4 +11,8 @@ test:
 	docker-compose run --rm app poetry run pytest
 
 
-restart: down up
+restart: 
+	down up
+
+coverage:
+	docker-compose run --rm app poetry run pytest --cov=app --cov-report=term-missing --cov-report=html
