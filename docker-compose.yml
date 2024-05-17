@@ -9,8 +9,6 @@ services:
       - .:/app
     expose:
       - 8000
-    env_file:
-      - .env
 
   nginx:
     image: nginx:latest
