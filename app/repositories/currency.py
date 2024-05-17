@@ -20,7 +20,7 @@ class ExchangeRateAPIRepository(ExchangeRateRepository):
         target_currency: str,
     ) -> ExchangeRate:
         response = requests.get(
-            f"https://api.exchangerate-api.com/v4/latest/{base_currency}", timeout=1
+            f"https://api.exchangerate-api.com/v4/latest/{base_currency}", timeout=10
         )
         if response.status_code != 200:
             raise Exception("Error fetching exchange rates")
