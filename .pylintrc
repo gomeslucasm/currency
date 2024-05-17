@@ -1,0 +1,18 @@
+[MASTER]
+ignore=tests
+jobs=1
+
+[MESSAGES CONTROL]
+disable=C0114,C0115,C0116,R0903
+
+[REPORTS]
+output-format=colorized
+
+[FORMAT]
+max-line-length=88
+
+[SIMILARITIES]
+min-similarity-lines=4
+
+[TYPECHECK]
+ignore-missing-imports=yes
